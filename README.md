@@ -68,8 +68,7 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/noufal-fanas/PRODIGY-CS-04.git
-   cd PRODIGY-CS-04
+   git clone https://github.com/Mohammedshezil/PRODIGY-CS-04.git
    ```
 
 2. **Install Dependencies**
