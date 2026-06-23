@@ -46,7 +46,7 @@
 
 ## 📋 Features Implemented
 * [x] **Interactive Menu:** Selection-based navigation system.
-* [x] **ASCII Branding:** Large block-style header for "KeyMon".
+* [x] **ASCII Branding:** Large block-style header for "KeyTrack".
 * [x] **Error Handling:** Validates directory paths before initialization.
 * [x] **Session Logging:** Appends data across multiple sessions.
 * [x] **Cross-Platform Support:** Compatible with both Linux and Windows.
