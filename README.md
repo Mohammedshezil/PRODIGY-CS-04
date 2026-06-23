@@ -50,8 +50,10 @@
 ---
 
 ## 👨‍💻 Developer Credits
-**Developed by:** **Mohammed Shezil**
-*Internship Task - Simple Keylogger*
+**Developer:** [Mohammed Shezil](https://github.com/Mohammedshezil)  
+**Organization:** Prodigy Infotech  
+**Task:** Task 04 - Simple Keylogger  
+*Developed as part of the Cybersecurity Internship program.*
 
 ### ⚠️ Ethical Disclaimer
 *This tool is intended for educational purposes only. Unauthorized use of this software to monitor keystrokes on machines you do not have explicit permission to access is illegal and unethical. Use responsibly.*
