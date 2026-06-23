@@ -23,7 +23,7 @@ class KeyTrack:
         os.system('cls' if os.name == 'nt' else 'clear')
 
     def show_header(self):
-        # Ultra-Bold Block ASCII Art with Developer Credits
+        # Updated ASCII Banner for KeyTrack
         banner = f"""
 {Colors.CYAN}{Colors.BOLD}
  ██╗  ██╗███████╗██╗   ██╗████████╗██████╗  █████╗  ██████╗██╗  ██╗
