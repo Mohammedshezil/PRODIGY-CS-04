@@ -10,7 +10,7 @@
 
 ## 🔍 Overview
 ### About the Project
-**KeyMon** is an interactive, console-based keylogger designed for cybersecurity education and system monitoring. Built with Python and the `pynput` library, it features a bold, professional terminal interface that allows users to configure logging paths and control the monitoring process in real-time. This project demonstrates low-level input hooking and file I/O operations while emphasizing ethical usage.
+**KeyTrack** is an interactive, console-based keylogger designed for cybersecurity education and system monitoring. Built with Python and the `pynput` library, it features a bold, professional terminal interface that allows users to configure logging paths and control the monitoring process in real-time. This project demonstrates low-level input hooking and file I/O operations while emphasizing ethical usage.
 
 ---
 
