@@ -25,10 +25,14 @@
 
 ## ⚙️ How It Works
 
-| | | |
+| Step | Action | Description |
 | :--- | :--- | :--- |
-| **01** Background Listener hooks into system input via `pynput`. | **02** Event Handlers differentiate between chars and special keys. | **03** Logging Module appends data with high-precision timestamps. |
-| **04** Dynamic Pathing verifies directory existence before writing. | **05** ANSI Escape Codes provide the bold, colorful terminal UI. | **06** Safe Termination allows for graceful listener shutdown. |
+| **01** | **Hook** | Background Listener hooks into system input via `pynput`. |
+| **02** | **Event** | Handlers differentiate between chars and special keys. |
+| **03** | **Log** | Logging Module appends data with high-precision timestamps. |
+| **04** | **Pathing** | Dynamic Pathing verifies directory existence before writing. |
+| **05** | **UI** | ANSI Escape Codes provide the bold, colorful terminal UI. |
+| **06** | **Shutdown** | Safe Termination allows for graceful listener shutdown. |
 
 ---
 
@@ -55,7 +59,9 @@
 **Task:** Task 04 - Simple Keylogger  
 *Developed as part of the Cybersecurity Internship program.*
 
-### ⚠️ Ethical Disclaimer
+---
+
+## ⚠️ Ethical Disclaimer
 *This tool is intended for educational purposes only. Unauthorized use of this software to monitor keystrokes on machines you do not have explicit permission to access is illegal and unethical. Use responsibly.*
 
 ---
@@ -70,7 +76,8 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Mohammedshezil/PRODIGY-CS-04.git
+   git clone [https://github.com/Mohammedshezil/PRODIGY-CS-04.git](https://github.com/Mohammedshezil/PRODIGY-CS-04.git)
+   cd PRODIGY-CS-04
    ```
 
 2. **Install Dependencies**
